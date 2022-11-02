@@ -1,0 +1,47 @@
+{
+  "name": "react-shadow-dom-sample",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "iife": "lib/index.iife.js",
+  "files": [
+    "lib"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "volta": {
+    "node": "16.18.0",
+    "yarn": "3.2.4"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.31",
+    "@types/lodash": "^4.14.186",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@types/rimraf": "^3.0.2",
+    "autoprefixer": "^10.4.13",
+    "cheerio": "^1.0.0-rc.12",
+    "chokidar": "^3.5.3",
+    "esbuild": "^0.15.12",
+    "fs-extra": "^10.1.0",
+    "glob": "^8.0.3",
+    "js-beautify": "^1.14.7",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.18",
+    "rimraf": "^3.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.8",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swr": "^1.3.0"
+  },
+  "scripts": {
+    "dev": "yarn clean && node ./serve.mjs",
+    "clean": "rimraf lib"
+  }
+}
