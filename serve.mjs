@@ -39,7 +39,15 @@ async function processCss(css) {
         inject: true,
         templateFile: 'public/index.html'
       })
-    ]
+    ],
+    loader: {
+      '.png': 'dataurl',
+      '.woff': 'dataurl',
+      '.woff2': 'dataurl',
+      '.eot': 'dataurl',
+      '.ttf': 'dataurl',
+      '.svg': 'dataurl',
+    }
   });
 
   chokidar.watch(['src/**/*.{ts,tsx}'], {
