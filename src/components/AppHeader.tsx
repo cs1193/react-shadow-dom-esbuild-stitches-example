@@ -4,7 +4,8 @@ import { styled } from '../styles/stitches.config';
 const AppHeaderStyledContext = styled('div', {
   backgroundColor: '$gunmetal',
   color: '$white',
-  padding: '$2'
+  padding: '$2',
+  fontWeight: 'bold'
 });
 
 interface AppHeaderProps {};
