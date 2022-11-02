@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { globalStyles, styled } from './styles/stitches.config';
 import { AppHeader } from './components/AppHeader';
 import { Portal } from './components/Portal';
-import { ExampleShadowDOM } from './components/ExampleShadowDOM/ExampleShadowDOM';
+import { ShadowDOMPortal } from './components/ShadowDOMPortal';
 
 const BackgroundText = styled('div', {
   fontSize: '$large',
@@ -33,14 +33,14 @@ export const App = (props: AppProps) => {
     <>
       <AppHeader />
       <BackgroundText>
-        The monochromatic styles come from the main app <CodeText>stitches.config.ts</CodeText>.
+        The monochromatic styles come from the main app <CodeText>stitches.config.ts</CodeText>
       </BackgroundText>
-      <Portal id="portal-example-1">
+      {/* <Portal id="portal-example-1">
         <>
           This is portal example
         </>
-      </Portal>
-      <ExampleShadowDOM id="example-shadow-dom-portal-1" />
+      </Portal> */}
+      <ShadowDOMPortal id="shadow-dom-portal-example-1" />
     </>
   );
 };
